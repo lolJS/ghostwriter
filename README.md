@@ -30,4 +30,4 @@ Include a couple of `ghost-writer-editable` classes on content that you wish to 
 License
 =======
 
-Creative Commons Attribution-NonCommercial 2.0 Generic
+MIT
