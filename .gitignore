@@ -37,4 +37,4 @@ Icon
 .Trashes
 
 # Ignore stuff installed by npm and bower
-
+node_modules
