@@ -1,4 +1,4 @@
-ghost**writer**
+ghostWriter
 ===========
 
 Medium like editor utilizing The Guardian's Scribe content editable framework.
