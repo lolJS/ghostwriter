@@ -1,0 +1,31 @@
+{
+  "name": "ghostpress",
+  "version": "0.0.1",
+  "homepage": "http://ghostpress.io",
+  "authors": [
+    "Jon Brito <jon@devdrops.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/vendor"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "requirejs": "latest",
+    "requirejs-domready": "latest",
+    "scribe": "~0.1.17",
+    "scribe-plugin-toolbar": "~0.1.4",
+    "scribe-plugin-heading-command": "~0.1.0",
+    "scribe-plugin-formatter-plain-text-convert-new-lines-to-html": "~0.1.1",
+    "scribe-plugin-intelligent-unlink-command": "~0.1.4",
+    "scribe-plugin-smart-lists": "~0.1.4",
+    "scribe-plugin-link-prompt-command": "~0.1.2",
+    "scribe-plugin-curly-quotes": "~0.1.7",
+    "scribe-plugin-sanitizer": "~0.1.4",
+    "scribe-plugin-blockquote-command": "~0.1.0",
+    "js-beautify": "~1.5.1"
+  }
+}

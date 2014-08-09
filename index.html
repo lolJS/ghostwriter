@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GhostPress + Scribe = GhostWriter</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Merriweather|Pacifico);
+      * {
+        box-sizing: border-box;
+      }
+
+      blockquote {
+        border-left: 3px solid #5A9FA2;
+        margin: 10px;
+        padding: 8px;
+      }
+
+      blockquote p {
+        padding: 0;
+        margin: 0;
+      }
+
+      html,body {
+        margin: 0;
+        font-family: Merriweather;
+      }
+
+      .scribe:focus {
+        box-shadow: none;
+        border: 0 none;
+      }
+
+      .scribe {
+        position: relative;
+        z-index: 3;
+        margin-top: 280px;
+        margin-bottom: 1em;
+        padding: 0.5em;
+        background: #fff;
+        line-height: 1.5em;
+      }
+
+      .scribe-html {
+        width: 100%;
+        font-family: monospace;
+        background: #222;
+        color: #ccc;
+        border: 1px dotted hsl(0, 0%, 50%);
+        padding: 0.5em;
+      }
+
+      div[contenteditable=true]:focus {
+        border: 0 none;
+        outline: none;
+        border-color:#9ecaed;
+        box-shadow: 0 none;   
+      }
+
+      h1 {
+        padding: 66px 0;
+        text-align: center;
+        background: #7C8D90;
+        color: #FAFAFA;
+        margin-top: 1px;
+      }
+
+      h2 {
+        font-family: Pacifico;
+        color: #222;
+        font-weight: normal;
+        display: inline;
+      }
+
+      p {
+        margin-top: 0;
+        color: #3A3A3A;
+      }
+      
+      a, a:visited {
+        color: #8bb;
+      }
+
+      header {
+        height: 45px;
+        width: 100%;
+      }
+
+      header a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        position: fixed;
+      }
+
+      .ghost-logo {
+        background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
+        display: inline-block;
+        padding: 13px;
+        margin-right: 20px;
+      }
+
+      .thin {
+        font-weight: 200;
+      }
+      .jumbotron {
+        background: none repeat scroll 0% 0% #7C8D90;
+        padding-bottom: 15px;
+        position: fixed;
+        height: 264px;
+        width: 100%;
+      }
+      .tryit {
+        color: #FFF;
+        text-align: center;
+        margin: 0px auto;
+        display: block;
+        width: 100%;
+        background: url('assets/img/gw-arrow.png') no-repeat center 27px transparent;
+        z-index: 1;
+        position: absolute;
+        height: 85px;
+      }
+      .sample-output {
+        margin: 0.5em 0px;
+        padding: 1em 1.5em;
+        background: none repeat scroll 0% 0% #222;
+      }
+      .sample-output h2 {
+        color: #efefef;
+      }
+    </style>
+    <link rel="stylesheet" href="assets/vendor/highlight/styles/obsidian.css">
+  </head>
+  <body>
+    <header>
+      <a href="/"><span class="ghost-logo"><img src="assets/img/ghost.png" alt="ghostWriter by devdrops"></span><span class="thin">ghost</span>Writer | Demo</a>
+    </header>
+
+    <div class="jumbotron">
+      <h1>GhostPress + Scribe = GhostWriter</h1>
+      <h2 class="tryit">Click here to try it out!</h2>
+    </div>
+
+    <div class="ghost-writer-editable" contenteditable></div>
+
+    <div class="sample-output">
+      <h2>Output</h2>
+      <pre class="scribe-html"><code></code></pre>
+    </div>
+    
+    <div class="gw-download">
+      <h2>Get GhostPress</h2>
+      <p>Check out the github for the full source or download a prepackaged version!</p>
+      <a class="git-hub" href="github.io/lolJS/ghost-writer"><span class="fontawesome-github"></span> Github</a>
+      <a class="download"><span class="fontawesome-download"></span> Download</a>
+    </div>
+    
+    <!--div class="ghost-writer-tab">
+      <div class="gw-container">
+        <div class="gw-icon"></div>
+        <div class="gw-tab-menu">
+          <ul>
+            <li><button data-gw-action-name="edit"><span class="fontawesome-edit"></span> Edit</button></li>
+            <!li><button data-gw-action-name="post"><span class="fontawesome-file-alt"></span></button></li>
+            <li><button data-gw-action-name="page"><span class="fontawesome-file"></span></button></li>
+          </ul>
+        </div>
+      </div>
+    </div-->
+    <script src="assets/vendor/requirejs/require.js" data-main="ghostwriter"></script>
+    <script src="dist/ghostpress-plugin.js"></script>
+    <script src="assets/vendor/highlight/highlight.pack.js"></script>
+  </body>
+</html>

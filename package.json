@@ -1,0 +1,38 @@
+{
+  "name": "ghostpress-plugin",
+  "version": "0.0.1",
+  "author": "Jon Brito <jon@devdrops.com>",
+  "homepage": "http://ghostpress.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lolJS/ghostpress-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lolJS/ghostpress-plugin/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install && grunt dev"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "bower": "~1.3.5",
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "~0.8.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-serve": "^0.1.3",
+    "load-grunt-tasks": "~0.6.0",
+    "time-grunt": "~0.3.2"
+  }
+}
