@@ -190,48 +190,6 @@ function($,
       mouseup: function (e) { setTimeout(function () { handleToolbarPosition(e); }, 100); },
       keyup: handleToolbarPosition
     });
-
-    //$(el).attr('contenteditable', false);
-  });
-/*
-  function enableEditing() {
-    $('.ghost-writer-editable').attr('contenteditable', true);
-    $el.attr('data-gw-action-name', 'save');
-    $el.html('Save <span class="fontawesome-save"></span>');
-    $('.gw-tab-menu').addClass('save');
-  }
-
-  function disableEditing() {
-    $('.ghost-writer-editable').attr('contenteditable', false);
-    $el.attr('data-gw-action-name', 'edit');
-    $el.html('Edit <span class="fontawesome-edit"></span>');
-    $('.gw-tab-menu').removeClass('save');
-  }
-
-  $('.gw-tab-menu ul li button').each(function (i, el) {
-    $(el).on({
-      click: function () {
-        var $el = $(el), 
-          action = $el.attr('data-gw-action-name');
-
-
-        switch (action) {
-          case 'edit':
-            enableEditing();
-          break;
-          case 'save':
-            disableEditing();
-
-            // do ajaxy save stuff here
-          break;
-          default:
-          break;
-        }
-      }
-    });
   });
 
-  $('.tryit').on('click', function() {
-
-  })*/
 });
