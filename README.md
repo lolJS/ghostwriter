@@ -1,9 +1,11 @@
-ghostwriter
+ghost**writer**
 ===========
 
 Medium like editor utilizing The Guardian's Scribe content editable framework.
 
-[Demo](http://loljs.github.io/ghostwriter)
+![Ghost Writer Preview](assets/img/example.png)
+
+Check out the [Demo](http://loljs.github.io/ghostwriter)
 
 To Do
 =====
