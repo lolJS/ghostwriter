@@ -9,6 +9,8 @@
 
 .ghost-writer {
   position: absolute;
+  top: -9999px;
+  left: -9999px;
   z-index: 99;
 
   padding: 3px 5px 3px 7px;

@@ -35,7 +35,6 @@
         position: relative;
         z-index: 3;
         margin-top: 280px;
-        margin-bottom: 1em;
         padding: 0.5em;
         background: #fff;
         line-height: 1.5em;
@@ -122,13 +121,52 @@
         height: 85px;
       }
       .sample-output {
-        margin: 0.5em 0px;
         padding: 1em 1.5em;
         background: none repeat scroll 0% 0% #222;
+
+        position: relative;
+        z-index: 3;
       }
       .sample-output h2 {
         color: #efefef;
       }
+      .gw-download {
+        padding: 1.5em;
+        background: #5D6B6F;
+        
+      }
+      .gw-download h2, .gw-download p {
+        color: #fff;
+      }
+      .gw-download h2 {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0.5em;
+      }
+
+      .gw-download p.center {
+        margin: 45px 0;
+      }
+      .center {
+        text-align: center;
+      }
+      
+      p.center a {
+        background: #222;
+        padding: 15px;
+        border-radius: 5px;
+        color: #CCC;
+        font-size: 17pt;
+        text-decoration: none;
+      }
+
+      p.center a:hover {
+        color: #FFF;
+        background: #383C3D;
+      }
+
     </style>
     <link rel="stylesheet" href="assets/vendor/highlight/styles/obsidian.css">
   </head>
@@ -151,9 +189,11 @@
     
     <div class="gw-download">
       <h2>Get GhostPress</h2>
-      <p>Check out the github for the full source or download a prepackaged version!</p>
-      <a class="git-hub" href="github.io/lolJS/ghost-writer"><span class="fontawesome-github"></span> Github</a>
-      <a class="download"><span class="fontawesome-download"></span> Download</a>
+      <p class="center">Check out the github for the full source or download a prepackaged version!</p>
+      <p class="center">
+        <a class="git-hub" href="github.io/lolJS/ghost-writer"><span class="fontawesome-github"></span> Github</a>
+        <a class="download"><span class="fontawesome-download"></span> Download</a>
+      </p>
     </div>
     
     <!--div class="ghost-writer-tab">
@@ -168,8 +208,9 @@
         </div>
       </div>
     </div-->
-    <script src="assets/vendor/requirejs/require.js" data-main="ghostwriter"></script>
-    <script src="dist/ghostpress-plugin.js"></script>
-    <script src="assets/vendor/highlight/highlight.pack.js"></script>
+   <script src="assets/vendor/requirejs/require.js" data-main="ghostwriter"></script>
+   <script src="dist/ghostpress-plugin.js"></script>
+   <script src="assets/vendor/highlight/highlight.pack.js"></script>
+
   </body>
 </html>
