@@ -11,3 +11,18 @@ To Do
 Create Scribe plugin for images
 
 Create Scribe plugin to handle links in a nicer way
+
+Usage
+=====
+
+Clone or download.
+
+```npm install
+```
+include a couple of `ghost-writer-editable` classes on content that you wish to make editable and add `ghostpress-plugin.min.js` at the end of your `body` element!
+
+
+License
+=======
+
+Creative Commons Attribution-NonCommercial 2.0 Generic
