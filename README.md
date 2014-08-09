@@ -18,8 +18,8 @@ Usage
 Clone or download.
 
 ```npm install
-```
-include a couple of `ghost-writer-editable` classes on content that you wish to make editable and add `ghostpress-plugin.min.js` at the end of your `body` element!
+
+Include a couple of `ghost-writer-editable` classes on content that you wish to make editable and add `ghostpress-plugin.min.js` at the end of your `body` element!
 
 
 License
