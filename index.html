@@ -2,8 +2,6 @@
   <head>
     <meta charset="utf-8">
     <title>GhostPress + Scribe = GhostWriter</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  
     <style>
       @import url(http://fonts.googleapis.com/css?family=Merriweather|Pacifico);
       * {
@@ -63,35 +61,29 @@
         color: #FAFAFA;
         margin-top: 1px;
       }
-
       h2 {
         font-family: Pacifico;
         color: #222;
         font-weight: normal;
         display: inline;
       }
-
       p {
         margin-top: 0;
         color: #3A3A3A;
       }
-      
       a, a:visited {
         color: #8bb;
       }
-
       header {
         height: 45px;
         width: 100%;
       }
-
       header a {
         text-decoration: none;
         color: #333;
         font-weight: 600;
         position: fixed;
       }
-
       .ghost-logo {
         background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
         display: inline-block;
@@ -133,7 +125,6 @@
       .gw-download {
         padding: 1.5em;
         background: #5D6B6F;
-        
       }
       .gw-download h2, .gw-download p {
         color: #fff;
@@ -145,14 +136,12 @@
         width: 100%;
         padding: 0.5em;
       }
-
       .gw-download p.center {
         margin: 45px 0;
       }
       .center {
         text-align: center;
       }
-      
       p.center a {
         background: #222;
         padding: 15px;
@@ -161,14 +150,17 @@
         font-size: 17pt;
         text-decoration: none;
       }
-
       p.center a:hover {
         color: #FFF;
         background: #383C3D;
       }
+      .hljs {
+        overflow-x: scroll;
+      }
 
     </style>
-    <link rel="stylesheet" href="assets/vendor/highlight/styles/obsidian.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/highlightjs/styles/obsidian.css">
   </head>
   <body>
     <header>
@@ -208,9 +200,7 @@
         </div>
       </div>
     </div-->
-   <script src="assets/vendor/requirejs/require.js" data-main="ghostwriter"></script>
-   <script src="dist/ghostpress-plugin.js"></script>
-   <script src="assets/vendor/highlight/highlight.pack.js"></script>
-
+   
+   <script src="assets/vendor/requirejs/require.js" data-main="assets/js/app"></script>
   </body>
 </html>

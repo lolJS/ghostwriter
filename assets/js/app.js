@@ -14,12 +14,19 @@ requirejs.config({
       'scribe-plugin-sanitizer': 'scribe-plugin-sanitizer/scribe-plugin-sanitizer',
       'scribe-plugin-smart-lists': 'scribe-plugin-smart-lists/scribe-plugin-smart-lists',
       'scribe-plugin-toolbar': 'scribe-plugin-toolbar/scribe-plugin-toolbar',
+      'scribe-plugin-ghost-toolbar': '../js/scribe-plugin-ghost-toolbar/scribe-plugin-ghost-toolbar',
       // not required to acutally use scribe
       'beautify': 'js-beautify/js/lib/beautify',
       'beautify-html': 'js-beautify/js/lib/beautify-html',
-      'beautify-css': 'js-beautify/js/lib/beautify-css'
+      'beautify-css': 'js-beautify/js/lib/beautify-css',
+      'highlightjs': 'highlightjs/highlight'
+    },
+    shim: {
+      'highlightjs': {
+        exports: 'hljs'
+      }
     }
 });
 
 // Load the main app module to start the app
-requirejs(['ghostwriter']);
+requirejs(['app/ghostwriter']);
